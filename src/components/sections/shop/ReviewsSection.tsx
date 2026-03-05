@@ -29,11 +29,11 @@ function RatingSummary() {
     <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start">
       {/* Average Rating */}
       <div className="flex flex-col items-center text-center">
-        <span className="text-6xl font-bold text-charcoal">
+        <span className="text-6xl font-bold text-warm-white">
           {PRODUCT.rating}
         </span>
         <StarRating rating={PRODUCT.rating} size="md" className="mt-2" />
-        <p className="mt-1 text-sm text-charcoal-lighter">
+        <p className="mt-1 text-sm text-silver">
           {PRODUCT.reviewCount} reviews
         </p>
       </div>
@@ -42,16 +42,16 @@ function RatingSummary() {
       <div className="w-full max-w-sm flex-1 space-y-2">
         {RATING_DISTRIBUTION.map(({ stars, percentage }) => (
           <div key={stars} className="flex items-center gap-3">
-            <span className="w-12 text-right text-sm text-charcoal-lighter">
+            <span className="w-12 text-right text-sm text-silver">
               {stars} star{stars !== 1 && "s"}
             </span>
-            <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-gray-200">
+            <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-white/10">
               <div
                 className="h-full rounded-full bg-gold-500 transition-all duration-500"
                 style={{ width: `${percentage}%` }}
               />
             </div>
-            <span className="w-10 text-sm text-charcoal-lighter">
+            <span className="w-10 text-sm text-silver">
               {percentage}%
             </span>
           </div>
@@ -93,20 +93,20 @@ function ReviewCard({
         </div>
 
         {/* Title */}
-        <h3 className="font-semibold text-charcoal">{review.title}</h3>
+        <h3 className="font-semibold text-warm-white">{review.title}</h3>
 
         {/* Date */}
-        <p className="text-xs text-charcoal-lighter">
+        <p className="text-xs text-silver">
           {formatDate(review.date)}
         </p>
 
         {/* Review Text */}
-        <p className="text-sm leading-relaxed text-charcoal-lighter">
+        <p className="text-sm leading-relaxed text-silver">
           {review.text}
         </p>
 
         {/* Reviewer Name */}
-        <p className="text-sm font-medium text-charcoal">{review.name}</p>
+        <p className="text-sm font-medium text-warm-white">{review.name}</p>
       </div>
     </Card>
   );
@@ -114,13 +114,13 @@ function ReviewCard({
 
 export function ReviewsSection() {
   return (
-    <section id="reviews" className="bg-white py-16 lg:py-24">
+    <section id="reviews" className="bg-navy-800 py-16 lg:py-24">
       <Container>
         <FadeIn>
           <SectionHeading
             eyebrow="Customer Reviews"
-            heading="What Golfers Are Saying"
-            subtitle="Real feedback from real golfers who have made Game Plan part of their routine."
+            heading="What Athletes Are Saying"
+            subtitle="Real feedback from real athletes who have made Elysian Clarity part of their routine."
           />
         </FadeIn>
 
@@ -159,7 +159,7 @@ export function ReviewsSection() {
                 Soon
               </Badge>
             </div>
-            <p className="text-xs text-charcoal-lighter">
+            <p className="text-xs text-silver">
               Reviews will be enabled at launch.
             </p>
           </div>

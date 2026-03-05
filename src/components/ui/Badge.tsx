@@ -1,10 +1,10 @@
 import { cn } from "@/lib/utils";
 
 const variantClasses = {
-  default: "bg-green-100 text-green-800",
-  gold: "bg-gold-500/10 text-gold-600",
-  green: "bg-green-600 text-white",
-  outline: "border border-green-600 text-green-600",
+  default: "bg-gold-500/10 text-gold-400",
+  gold: "bg-gold-500/10 text-gold-400",
+  green: "bg-gold-500 text-navy-950",
+  outline: "border border-gold-500/50 text-gold-500",
 } as const;
 
 interface BadgeProps {

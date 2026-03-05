@@ -41,7 +41,7 @@ export function ProductHero() {
   const [activeThumb, setActiveThumb] = useState(0);
 
   return (
-    <section className="bg-white pt-28 pb-12 lg:pt-32 lg:pb-20">
+    <section className="bg-navy-900 pt-28 pb-12 lg:pt-32 lg:pb-20">
       <Container size="wide">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left Column — Image Gallery */}
@@ -52,7 +52,7 @@ export function ProductHero() {
                 icon="product"
                 aspectRatio="aspect-square"
                 className={cn(
-                  "w-full rounded-2xl border border-gray-100",
+                  "w-full rounded-2xl border border-white/10",
                   "transition-all duration-300"
                 )}
               />
@@ -65,8 +65,8 @@ export function ProductHero() {
                     className={cn(
                       "overflow-hidden rounded-xl border-2 transition-all duration-200",
                       activeThumb === idx
-                        ? "border-green-700 ring-2 ring-green-700/20"
-                        : "border-transparent hover:border-gray-200"
+                        ? "border-gold-500 ring-2 ring-gold-500/20"
+                        : "border-transparent hover:border-white/20"
                     )}
                   >
                     <PlaceholderImage
@@ -90,7 +90,7 @@ export function ProductHero() {
               </div>
 
               {/* Product Name */}
-              <h1 className="font-display text-3xl font-bold text-charcoal sm:text-4xl lg:text-5xl">
+              <h1 className="font-display text-3xl font-bold text-warm-white sm:text-4xl lg:text-5xl">
                 {PRODUCT.name}
               </h1>
 
@@ -99,7 +99,7 @@ export function ProductHero() {
                 <StarRating rating={PRODUCT.rating} />
                 <a
                   href="#reviews"
-                  className="text-sm text-charcoal-lighter transition-colors hover:text-green-700"
+                  className="text-sm text-silver transition-colors hover:text-gold-500"
                 >
                   {PRODUCT.rating} ({PRODUCT.reviewCount} reviews)
                 </a>
@@ -107,32 +107,32 @@ export function ProductHero() {
 
               {/* Price */}
               <div className="flex items-baseline gap-2">
-                <span className="text-3xl font-bold text-charcoal">
+                <span className="text-3xl font-bold text-warm-white">
                   {PRODUCT.priceFormatted}
                 </span>
-                <span className="text-sm text-charcoal-lighter">
+                <span className="text-sm text-silver">
                   ({PRODUCT.pricePerServing} per serving)
                 </span>
               </div>
 
               {/* Description */}
-              <p className="text-base leading-relaxed text-charcoal-lighter">
+              <p className="text-base leading-relaxed text-silver">
                 {PRODUCT.shortDescription}
               </p>
 
               {/* Format + Count */}
-              <div className="flex items-center gap-4 text-sm text-charcoal">
+              <div className="flex items-center gap-4 text-sm text-warm-white">
                 <span className="font-medium">
                   {PRODUCT.format} &middot; {PRODUCT.count}
                 </span>
-                <span className="text-charcoal-lighter">
+                <span className="text-silver">
                   Flavor: {PRODUCT.flavor}
                 </span>
               </div>
 
               {/* Quantity */}
               <div className="flex items-center gap-4">
-                <label className="text-sm font-medium text-charcoal">
+                <label className="text-sm font-medium text-warm-white">
                   Quantity:
                 </label>
                 <QuantitySelector value={quantity} onChange={setQuantity} />
@@ -159,14 +159,14 @@ export function ProductHero() {
               </div>
 
               {/* Trust Badges */}
-              <div className="border-t border-gray-100 pt-6">
+              <div className="border-t border-white/10 pt-6">
                 <div className="flex flex-wrap gap-2">
                   {PRODUCT.trustBadges.map((badge) => (
                     <span
                       key={badge}
-                      className="inline-flex items-center gap-1.5 rounded-full border border-green-600/20 bg-green-50 px-3 py-1.5 text-xs font-medium text-green-700"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-gold-500/20 bg-gold-500/10 px-3 py-1.5 text-xs font-medium text-gold-400"
                     >
-                      <CheckIcon className="h-3.5 w-3.5 text-green-600" />
+                      <CheckIcon className="h-3.5 w-3.5 text-gold-500" />
                       {badge}
                     </span>
                   ))}

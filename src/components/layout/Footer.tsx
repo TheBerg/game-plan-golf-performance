@@ -6,7 +6,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-green-950 text-white">
+    <footer className="bg-navy-950 text-white">
       <Container size="wide" className="py-16">
         {/* Main grid */}
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
@@ -14,18 +14,18 @@ export function Footer() {
           <div className="md:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-flex flex-col leading-none">
               <span className="text-xl font-bold tracking-wide text-white">
-                GAME PLAN
+                ELYSIAN
               </span>
               <span className="text-[0.625rem] font-medium tracking-[0.2em] text-gold-500">
-                GOLF PERFORMANCE
+                SPORTS
               </span>
             </Link>
             <p className="mt-3 font-display text-sm italic text-gold-400">
               {SITE_CONFIG.tagline}
             </p>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
-              Premium golf nootropic hydration. Engineered for mental clarity,
-              sustained energy, and peak performance on every hole.
+              Engineered for athletes who refuse to leave performance to chance.
+              Nootropic hydration designed for elite competition.
             </p>
           </div>
 
@@ -91,7 +91,7 @@ export function Footer() {
               />
               <button
                 type="submit"
-                className="shrink-0 rounded-lg bg-gold-500 px-4 py-2.5 text-sm font-semibold text-green-950 transition-colors hover:bg-gold-400"
+                className="shrink-0 rounded-lg bg-gold-500 px-4 py-2.5 text-sm font-semibold text-navy-950 transition-colors hover:bg-gold-400"
               >
                 Subscribe
               </button>
@@ -102,7 +102,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 flex flex-col items-center gap-4 border-t border-white/10 pt-8 sm:flex-row sm:justify-between">
           <p className="text-sm text-white/40">
-            &copy; {currentYear} Game Plan Golf Performance. All rights reserved.
+            &copy; {currentYear} Elysian Sports. All rights reserved.
           </p>
           <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             {FOOTER_LINKS.legal.map((link) => (

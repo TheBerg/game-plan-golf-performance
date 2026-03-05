@@ -20,7 +20,7 @@ export function Accordion({ items }: AccordionProps) {
   }, []);
 
   return (
-    <div className="divide-y divide-gray-200 border-y border-gray-200">
+    <div className="divide-y divide-white/10 border-y border-white/10">
       {items.map((item, index) => {
         const isOpen = openIndex === index;
 
@@ -32,12 +32,12 @@ export function Accordion({ items }: AccordionProps) {
               className="flex w-full items-center justify-between py-5 text-left"
               aria-expanded={isOpen}
             >
-              <span className="pr-4 text-base font-semibold text-charcoal">
+              <span className="pr-4 text-base font-semibold text-warm-white">
                 {item.question}
               </span>
               <svg
                 className={cn(
-                  "h-5 w-5 shrink-0 text-charcoal-lighter transition-transform duration-300",
+                  "h-5 w-5 shrink-0 text-silver transition-transform duration-300",
                   isOpen && "rotate-180",
                 )}
                 fill="none"
@@ -59,7 +59,7 @@ export function Accordion({ items }: AccordionProps) {
               )}
             >
               <div className="overflow-hidden">
-                <p className="pb-5 text-charcoal-lighter leading-relaxed">
+                <p className="pb-5 text-silver leading-relaxed">
                   {item.answer}
                 </p>
               </div>

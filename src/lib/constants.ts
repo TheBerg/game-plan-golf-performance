@@ -1,10 +1,11 @@
 export const SITE_CONFIG = {
-  name: "Game Plan Golf Performance",
-  tagline: "Fuel Your Focus. Own the Course.",
+  name: "Elysian Sports",
+  tagline: "Perform at the highest level.",
+  secondaryTagline: "Enter your Elysian state.",
   description:
-    "Premium golf nootropic hydration. Engineered for mental clarity, sustained energy, and peak performance on every hole.",
-  domain: "https://www.gameplangolfperformance.com",
-  email: "hello@gameplangolfperformance.com",
+    "Engineered for athletes who refuse to leave performance to chance. Every formulation is built on clinical science, designed for the demands of elite competition.",
+  domain: "https://www.elysiansports.com",
+  email: "hello@elysiansports.com",
 };
 
 export const NAV_ITEMS = [
@@ -15,8 +16,8 @@ export const NAV_ITEMS = [
 ] as const;
 
 export const PRODUCT = {
-  name: "Game Plan Golf Performance Hydration",
-  shortName: "Game Plan Hydration",
+  name: "Elysian Clarity",
+  shortName: "Clarity",
   format: "Stick Pack",
   count: "10ct Box",
   price: 24.99,
@@ -27,14 +28,14 @@ export const PRODUCT = {
   rating: 4.8,
   reviewCount: 127,
   description:
-    "A precision-engineered nootropic hydration blend designed specifically for golfers. Each stick pack delivers clinically-backed cognitive enhancers, premium electrolytes, and adaptogenic herbs to keep you sharp from the first tee to the 18th green.",
+    "A precision-engineered nootropic hydration blend designed for peak athletic performance. Each stick pack delivers clinically-backed cognitive enhancers, premium electrolytes, and adaptogenic herbs to keep you sharp from the first tee to the final hole.",
   shortDescription:
-    "Nootropic hydration engineered for golfers. Sharpen focus, sustain energy, and perform at your peak — every round.",
+    "Nootropic hydration engineered for elite performance. Sharpen focus, sustain energy, and perform at your peak — every round.",
   howToUse: [
     "Tear open one stick pack",
     "Mix into 12-16 oz of cold water",
-    "Drink 15-30 minutes before your round or during play",
-    "Stay hydrated and focused for all 18 holes",
+    "Drink 15-30 minutes before competition or during play",
+    "Stay hydrated and focused for peak performance",
   ],
   trustBadges: [
     "Sugar-Free",
@@ -81,9 +82,9 @@ export const INGREDIENTS = [
     category: "nootropic" as const,
     highlight: false,
     description:
-      "A premium choline source that crosses the blood-brain barrier to support acetylcholine production — the neurotransmitter essential for focus and muscle coordination.",
+      "A premium choline source that crosses the blood-brain barrier to support acetylcholine production \u2014 the neurotransmitter essential for focus and muscle coordination.",
     benefits: ["Mental clarity", "Mind-muscle connection", "Sustained attention"],
-    color: "green",
+    color: "gold",
   },
   {
     name: "L-Theanine",
@@ -94,7 +95,7 @@ export const INGREDIENTS = [
     description:
       "Promotes calm, focused attention without drowsiness. Works synergistically with caffeine to deliver smooth, jitter-free energy.",
     benefits: ["Calm focus", "Reduced anxiety", "Smooth energy"],
-    color: "green",
+    color: "gold",
   },
   {
     name: "Natural Caffeine",
@@ -103,9 +104,9 @@ export const INGREDIENTS = [
     category: "nootropic" as const,
     highlight: false,
     description:
-      "Moderate caffeine dose (~1 cup of coffee) paired with L-Theanine for clean energy without the crash or jitters that can ruin your short game.",
+      "Moderate caffeine dose (~1 cup of coffee) paired with L-Theanine for clean energy without the crash or jitters that can compromise your performance.",
     benefits: ["Clean energy", "Alertness", "No crash"],
-    color: "green",
+    color: "gold",
   },
   {
     name: "Lion\u2019s Mane",
@@ -116,7 +117,7 @@ export const INGREDIENTS = [
     description:
       "A powerful medicinal mushroom that supports nerve growth factor (NGF) production. Promotes long-term brain health and acute cognitive performance.",
     benefits: ["Neuroprotection", "Mental stamina", "Brain health"],
-    color: "green",
+    color: "gold",
   },
   {
     name: "Rhodiola Rosea",
@@ -127,7 +128,7 @@ export const INGREDIENTS = [
     description:
       "An elite adaptogen used by athletes and military personnel to combat fatigue and enhance mental performance under stress.",
     benefits: ["Stress resilience", "Anti-fatigue", "Mental endurance"],
-    color: "green",
+    color: "gold",
   },
   {
     name: "Electrolyte Complex",
@@ -136,9 +137,9 @@ export const INGREDIENTS = [
     category: "electrolyte" as const,
     highlight: false,
     description:
-      "Optimally dosed electrolytes to prevent dehydration-related performance decline. Formulated for the unique demands of 4+ hours on the course.",
+      "Optimally dosed electrolytes to prevent dehydration-related performance decline. Formulated for the unique demands of 4+ hours of competition.",
     benefits: ["Hydration", "Muscle function", "Cramp prevention"],
-    color: "green",
+    color: "gold",
   },
 ];
 
@@ -182,7 +183,7 @@ export const HOW_IT_WORKS_STEPS = [
     step: 1,
     title: "Tear",
     description:
-      "Open a single stick pack — perfectly portioned for your round.",
+      "Open a single stick pack \u2014 perfectly portioned for your round.",
     icon: "tear" as const,
   },
   {
@@ -193,9 +194,9 @@ export const HOW_IT_WORKS_STEPS = [
   },
   {
     step: 3,
-    title: "Play",
+    title: "Perform",
     description:
-      "Experience sharper focus, sustained energy, and optimal hydration for all 18 holes.",
+      "Experience sharper focus, sustained energy, and optimal hydration for peak performance.",
     icon: "play" as const,
   },
 ];
@@ -204,13 +205,13 @@ export const BENEFITS = [
   {
     title: "Laser Focus",
     description:
-      "CognatiQ\u00AE and Alpha-GPC sharpen concentration for critical putts and approach shots.",
+      "CognatiQ\u00AE and Alpha-GPC sharpen concentration for critical moments when precision matters most.",
     icon: "focus" as const,
   },
   {
     title: "Calm Energy",
     description:
-      "L-Theanine + natural caffeine deliver smooth, jitter-free energy that lasts the full round.",
+      "L-Theanine + natural caffeine deliver smooth, jitter-free energy that lasts through full competition.",
     icon: "energy" as const,
   },
   {
@@ -226,28 +227,28 @@ export const TESTIMONIALS = [
     name: "Mike R.",
     location: "Scottsdale, AZ",
     rating: 5,
-    text: "I've tried every golf supplement out there. Game Plan is the first one that actually makes a noticeable difference on the back nine. My focus stays sharp through 18.",
+    text: "I've tried every golf supplement out there. Elysian Clarity is the first one that actually makes a noticeable difference on the back nine. My focus stays sharp through 18.",
     handicap: "8 handicap",
   },
   {
     name: "Sarah L.",
     location: "Austin, TX",
     rating: 5,
-    text: "The taste is incredible — not chalky or overly sweet like other hydration mixes. And I genuinely feel more dialed in during my rounds. Game changer.",
+    text: "The taste is incredible \u2014 not chalky or overly sweet like other hydration mixes. And I genuinely feel more dialed in during my rounds. Game changer.",
     handicap: "14 handicap",
   },
   {
     name: "James K.",
     location: "Charlotte, NC",
     rating: 5,
-    text: "As a club pro, I need to be on point for 8+ hours a day. Game Plan keeps me mentally sharp from the first lesson to the last. My students have noticed the difference too.",
+    text: "As a club pro, I need to be on point for 8+ hours a day. Elysian keeps me mentally sharp from the first lesson to the last. My students have noticed the difference too.",
     handicap: "PGA Professional",
   },
   {
     name: "David T.",
     location: "San Diego, CA",
     rating: 4,
-    text: "Love the clean energy — no crash at the turn like I used to get with energy drinks. The electrolytes actually work too. Huge fan of the citrus flavor.",
+    text: "Love the clean energy \u2014 no crash at the turn like I used to get with energy drinks. The electrolytes actually work too. Huge fan of the citrus flavor.",
     handicap: "12 handicap",
   },
   {
@@ -266,7 +267,7 @@ export const REVIEWS = [
     title: "Best golf supplement I've tried",
     date: "2024-12-15",
     verified: true,
-    text: "After 20+ years of golf, I've tried everything from energy drinks to focus supplements. Game Plan is the first product that genuinely improves my mental game without any jitters or crash. My back nine scores have improved noticeably.",
+    text: "After 20+ years of golf, I've tried everything from energy drinks to focus supplements. Elysian Clarity is the first product that genuinely improves my mental game without any jitters or crash. My back nine scores have improved noticeably.",
   },
   {
     name: "Sarah L.",
@@ -274,15 +275,15 @@ export const REVIEWS = [
     title: "Great taste, real results",
     date: "2024-12-10",
     verified: true,
-    text: "I was skeptical, but after a month of using Game Plan before every round, I'm a believer. The citrus flavor is refreshing and not too sweet. More importantly, I feel focused and energized through all 18 holes.",
+    text: "I was skeptical, but after a month of using Clarity before every round, I'm a believer. The citrus flavor is refreshing and not too sweet. More importantly, I feel focused and energized through all 18 holes.",
   },
   {
     name: "James K.",
     rating: 5,
-    title: "A must for serious golfers",
+    title: "A must for serious athletes",
     date: "2024-11-28",
     verified: true,
-    text: "As a PGA teaching pro, I need to stay sharp all day. Game Plan has become part of my daily routine. The combination of nootropics and electrolytes is perfect for the demands of golf.",
+    text: "As a PGA teaching pro, I need to stay sharp all day. Elysian has become part of my daily routine. The combination of nootropics and electrolytes is perfect for the demands of competition.",
   },
   {
     name: "Tom W.",
@@ -298,50 +299,50 @@ export const REVIEWS = [
     title: "Changed my tournament game",
     date: "2024-11-01",
     verified: true,
-    text: "I play competitively and the mental side of golf is huge. Game Plan gives me a calm, focused energy that helps me stay in the zone. No more mental fatigue on holes 14-18.",
+    text: "I play competitively and the mental side of the game is huge. Elysian Clarity gives me a calm, focused energy that helps me stay in the zone. No more mental fatigue in the final stretch.",
   },
 ];
 
 export const FAQS = [
   {
-    question: "How much caffeine is in Game Plan?",
+    question: "How much caffeine is in Elysian Clarity?",
     answer:
-      "Each serving contains 100mg of natural caffeine from green tea — roughly equivalent to one cup of coffee. Paired with 200mg of L-Theanine, it delivers smooth, focused energy without jitters or crash.",
+      "Each serving contains 100mg of natural caffeine from green tea \u2014 roughly equivalent to one cup of coffee. Paired with 200mg of L-Theanine, it delivers smooth, focused energy without jitters or crash.",
   },
   {
     question: "When should I drink it?",
     answer:
-      "For best results, mix one stick pack into cold water 15-30 minutes before your round. You can also sip it throughout your round to maintain hydration and focus. Many golfers keep a second pack for the back nine.",
+      "For best results, mix one stick pack into cold water 15-30 minutes before your round. You can also sip it throughout your round to maintain hydration and focus. Many athletes keep a second pack for the back nine.",
   },
   {
     question: "Is it safe to take daily?",
     answer:
-      "Yes! All ingredients are generally recognized as safe (GRAS) and dosed within clinically studied ranges. Game Plan is third-party tested for purity and potency. As with any supplement, consult your doctor if you have specific health concerns.",
+      "Yes! All ingredients are generally recognized as safe (GRAS) and dosed within clinically studied ranges. Elysian Clarity is third-party tested for purity and potency. As with any supplement, consult your doctor if you have specific health concerns.",
   },
   {
     question: "What does it taste like?",
     answer:
-      'Our Citrus Greens flavor has a clean, refreshing citrus taste with subtle green tea notes. No artificial sweeteners, no chalky texture — just smooth, easy-drinking hydration. We\'ve heard "it actually tastes good" more times than we can count.',
+      'Our Citrus Greens flavor has a clean, refreshing citrus taste with subtle green tea notes. No artificial sweeteners, no chalky texture \u2014 just smooth, easy-drinking hydration. We\'ve heard "it actually tastes good" more times than we can count.',
   },
   {
-    question: "Will this help my golf game?",
+    question: "Will this help my performance?",
     answer:
-      "Game Plan is designed to optimize the mental and physical factors that impact your performance: focus, energy, hydration, and stress management. While we can't guarantee lower scores, our ingredients are clinically shown to enhance cognitive function, and our users consistently report feeling sharper and more focused on the course.",
+      "Elysian Clarity is designed to optimize the mental and physical factors that impact your performance: focus, energy, hydration, and stress management. While we can\u2019t guarantee results, our ingredients are clinically shown to enhance cognitive function, and our users consistently report feeling sharper and more focused during competition.",
   },
   {
     question: "Is it legal for tournament play?",
     answer:
-      "Absolutely. Game Plan contains no banned substances under USGA, R&A, or WADA guidelines. All ingredients are naturally derived and commonly found in food and beverages.",
+      "Absolutely. Elysian Clarity contains no banned substances under USGA, R&A, or WADA guidelines. All ingredients are naturally derived and commonly found in food and beverages.",
   },
   {
     question: "What makes this different from regular electrolyte drinks?",
     answer:
-      "Most hydration mixes stop at electrolytes. Game Plan combines premium electrolytes with clinically-backed nootropics (CognatiQ\u00AE, Alpha-GPC, L-Theanine) and adaptogens (Lion\u2019s Mane, Rhodiola Rosea) specifically chosen for the cognitive demands of golf. It's hydration + mental performance in one.",
+      "Most hydration mixes stop at electrolytes. Elysian Clarity combines premium electrolytes with clinically-backed nootropics (CognatiQ\u00AE, Alpha-GPC, L-Theanine) and adaptogens (Lion\u2019s Mane, Rhodiola Rosea) specifically chosen for the cognitive demands of elite competition. It\u2019s hydration + mental performance in one.",
   },
   {
     question: "Do you offer a subscription?",
     answer:
-      "We will! Subscribe & Save will be available at launch with a 15% discount on every order. Choose delivery every 30, 60, or 90 days. Cancel or modify anytime — no commitments.",
+      "We will! Subscribe & Save will be available at launch with a 15% discount on every order. Choose delivery every 30, 60, or 90 days. Cancel or modify anytime \u2014 no commitments.",
   },
 ];
 
@@ -391,10 +392,10 @@ export const CLINICAL_STUDIES = [
 export const BRAND_STORY = {
   headline: "Born on the Course. Backed by Science.",
   paragraphs: [
-    "Game Plan started with a simple observation: golf is as much a mental game as a physical one, yet most golfers fuel their rounds with sugary sports drinks or nothing at all.",
-    "Our founders — a team of golfers, nutritional scientists, and product formulators — set out to create something different: a hydration product engineered specifically for the cognitive demands of golf.",
-    "After 18 months of formulation, testing, and real-world feedback from golfers of every level, Game Plan Golf Performance was born. Every ingredient was chosen with intention. Every dose backed by clinical research. Every sip designed to help you play your best golf.",
-    "We believe that what you put in your body directly impacts what you get out of your game. Game Plan isn\u2019t just hydration — it\u2019s your competitive edge.",
+    "Elysian Sports started with a simple observation: golf is as much a mental game as a physical one, yet most golfers fuel their rounds with sugary sports drinks or nothing at all.",
+    "Our founders \u2014 a team of athletes, nutritional scientists, and product formulators \u2014 set out to create something different: a hydration product engineered specifically for the cognitive demands of elite competition.",
+    "After 18 months of formulation, testing, and real-world feedback from athletes of every level, Elysian Clarity was born. Every ingredient was chosen with intention. Every dose backed by clinical research. Every sip designed to help you perform at your best.",
+    "We believe that what you put in your body directly impacts what you get out of your game. Elysian isn\u2019t just hydration \u2014 it\u2019s your competitive edge.",
   ],
 };
 

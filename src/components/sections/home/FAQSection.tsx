@@ -7,7 +7,7 @@ import { FAQS } from "@/lib/constants";
 
 export function FAQSection() {
   return (
-    <section id="faq" className="bg-white py-24">
+    <section id="faq" className="bg-navy-800 py-24">
       <Container>
         <div className="grid items-start gap-12 lg:grid-cols-5 lg:gap-16">
           {/* Left column: heading + intro + image */}
@@ -19,8 +19,8 @@ export function FAQSection() {
                 align="left"
                 className="mb-6"
               />
-              <p className="mb-8 text-charcoal-lighter leading-relaxed">
-                Everything you need to know about Game Plan Golf Performance.
+              <p className="mb-8 text-silver leading-relaxed">
+                Everything you need to know about Elysian Clarity.
                 Can&apos;t find what you&apos;re looking for? Reach out to our
                 team and we&apos;ll get back to you within 24 hours.
               </p>

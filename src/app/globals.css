@@ -1,38 +1,40 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #faf9f6;
-  --color-foreground: #1a1a1a;
+  --color-background: #08111A;
+  --color-foreground: #F8F6F0;
 
-  /* Brand Greens */
-  --color-green-950: #052e16;
-  --color-green-900: #14532d;
-  --color-green-800: #166534;
-  --color-green-700: #15803d;
-  --color-green-600: #16a34a;
-  --color-green-500: #22c55e;
-  --color-green-400: #4ade80;
-  --color-green-100: #dcfce7;
-  --color-green-50: #f0fdf4;
+  /* Navy (primary darks) */
+  --color-navy-950: #08111A;
+  --color-navy-900: #0D1B2A;
+  --color-navy-800: #1a2d42;
+  --color-navy-700: #1e3a5f;
+  --color-navy-600: #2a4a6b;
+  --color-navy-500: #3a6b8f;
+  --color-navy-100: #d1d9e0;
+  --color-navy-50: #e8ecf0;
 
-  /* Gold/Amber */
-  --color-gold-500: #f59e0b;
-  --color-gold-400: #fbbf24;
-  --color-gold-300: #fcd34d;
-  --color-gold-600: #d97706;
+  /* Gold/Accent */
+  --color-gold-600: #9A7A30;
+  --color-gold-500: #C9A84C;
+  --color-gold-400: #E8C97A;
+  --color-gold-300: #f0d99a;
 
-  /* Cream */
-  --color-cream: #faf9f6;
-  --color-cream-dark: #f5f0e8;
+  /* Warm White */
+  --color-warm-white: #F8F6F0;
+  --color-warm-white-dark: #EDE8DC;
+
+  /* Silver */
+  --color-silver: #A8B4BC;
 
   /* Charcoal */
-  --color-charcoal: #1a1a1a;
-  --color-charcoal-light: #2d2d2d;
-  --color-charcoal-lighter: #404040;
+  --color-charcoal: #2C3E50;
+  --color-charcoal-light: #34495e;
+  --color-charcoal-lighter: #546e7a;
 
   /* Fonts */
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-playfair);
+  --font-sans: var(--font-montserrat);
+  --font-display: var(--font-cormorant);
 
   /* Font sizes — display scale */
   --font-size-display-xl: 4.5rem;
@@ -44,7 +46,7 @@
 
 /* Base styles */
 body {
-  background-color: var(--color-cream);
+  background-color: var(--color-navy-950);
   color: var(--color-foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
@@ -56,8 +58,8 @@ html {
 
 /* Selection color */
 ::selection {
-  background-color: var(--color-green-600);
-  color: white;
+  background-color: var(--color-gold-500);
+  color: var(--color-navy-950);
 }
 
 /* Scrollbar styling */
@@ -66,14 +68,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-cream);
+  background: var(--color-navy-950);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-green-800);
+  background: var(--color-gold-600);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-green-700);
+  background: var(--color-gold-500);
 }

@@ -11,7 +11,7 @@ interface PlaceholderImageProps {
 }
 
 function PlaceholderIcon({ icon, dark }: { icon: IconType; dark: boolean }) {
-  const color = dark ? "text-white/30" : "text-green-700/30";
+  const color = dark ? "text-white/30" : "text-gold-500/30";
 
   const icons: Record<IconType, React.ReactNode> = {
     product: (
@@ -121,7 +121,7 @@ export function PlaceholderImage({
     <div
       className={cn(
         "flex flex-col items-center justify-center rounded-xl bg-gradient-to-br",
-        dark ? "from-green-900 to-green-800" : "from-green-100 to-cream",
+        dark ? "from-navy-900 to-navy-800" : "from-navy-800 to-navy-900",
         aspectRatio,
         className,
       )}
@@ -131,7 +131,7 @@ export function PlaceholderImage({
         <span
           className={cn(
             "mt-3 text-sm font-medium",
-            dark ? "text-white/40" : "text-green-700/40",
+            dark ? "text-white/40" : "text-gold-500/40",
           )}
         >
           {label}

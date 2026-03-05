@@ -14,12 +14,12 @@ const categoryLabels: Record<string, string> = {
 
 export function IngredientDeepDive() {
   return (
-    <section id="ingredients" className="bg-cream py-24 sm:py-32">
+    <section id="ingredients" className="bg-navy-900 py-24 sm:py-32">
       <Container size="wide">
         <SectionHeading
           eyebrow="The Formula"
           heading="Every Ingredient, Intentional"
-          subtitle="Clinically dosed, research-backed ingredients chosen specifically for the cognitive and physical demands of golf."
+          subtitle="Clinically dosed, research-backed ingredients chosen specifically for the cognitive and physical demands of elite competition."
         />
 
         <div className="mt-16 space-y-20 sm:mt-20 lg:space-y-28">
@@ -88,7 +88,7 @@ export function IngredientDeepDive() {
                     {/* Ingredient name */}
                     <h3
                       className={cn(
-                        "font-display font-bold text-charcoal",
+                        "font-display font-bold text-warm-white",
                         isHighlight
                           ? "text-3xl sm:text-4xl"
                           : "text-2xl sm:text-3xl",
@@ -99,7 +99,7 @@ export function IngredientDeepDive() {
 
                     {/* AKA */}
                     {ingredient.aka && (
-                      <p className="mt-1 text-sm text-charcoal-lighter">
+                      <p className="mt-1 text-sm text-silver">
                         ({ingredient.aka})
                       </p>
                     )}
@@ -110,24 +110,24 @@ export function IngredientDeepDive() {
                         "mt-6 inline-flex flex-col rounded-xl px-5 py-3",
                         isHighlight
                           ? "bg-gold-500/10 border border-gold-500/20"
-                          : "bg-green-50 border border-green-100",
+                          : "bg-navy-800 border border-white/10",
                       )}
                     >
                       <span
                         className={cn(
                           "text-2xl font-bold sm:text-3xl",
-                          isHighlight ? "text-gold-600" : "text-green-700",
+                          isHighlight ? "text-gold-600" : "text-gold-500",
                         )}
                       >
                         {ingredient.amount}
                       </span>
-                      <span className="text-xs font-medium uppercase tracking-wide text-charcoal-lighter">
+                      <span className="text-xs font-medium uppercase tracking-wide text-silver">
                         Per Serving
                       </span>
                     </div>
 
                     {/* Description */}
-                    <p className="mt-6 text-base leading-relaxed text-charcoal-lighter sm:text-lg">
+                    <p className="mt-6 text-base leading-relaxed text-silver sm:text-lg">
                       {ingredient.description}
                     </p>
 
@@ -140,7 +140,7 @@ export function IngredientDeepDive() {
                             "inline-flex items-center rounded-full px-3 py-1 text-xs font-medium",
                             isHighlight
                               ? "bg-gold-500/10 text-gold-600"
-                              : "bg-green-100 text-green-800",
+                              : "bg-gold-500/10 text-gold-400",
                           )}
                         >
                           {benefit}

@@ -36,7 +36,7 @@ export function Header() {
       className={cn(
         "transition-all duration-300",
         isScrolled
-          ? "bg-green-950/95 shadow-lg backdrop-blur-md"
+          ? "bg-navy-950/95 shadow-lg backdrop-blur-md"
           : "bg-transparent"
       )}
     >
@@ -44,10 +44,10 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="group flex flex-col leading-none">
           <span className="text-lg font-bold tracking-wide text-white sm:text-xl">
-            GAME PLAN
+            ELYSIAN
           </span>
           <span className="text-[0.625rem] font-medium tracking-[0.2em] text-gold-500 sm:text-xs">
-            GOLF PERFORMANCE
+            SPORTS
           </span>
         </Link>
 
@@ -78,7 +78,7 @@ export function Header() {
           {/* CTA button */}
           <Link
             href="/#waitlist"
-            className="ml-4 rounded-lg bg-gold-500 px-5 py-2.5 text-sm font-semibold text-green-950 transition-colors hover:bg-gold-400"
+            className="ml-4 rounded-lg bg-gold-500 px-5 py-2.5 text-sm font-semibold text-navy-950 transition-colors hover:bg-gold-400"
           >
             Join Waitlist
           </Link>

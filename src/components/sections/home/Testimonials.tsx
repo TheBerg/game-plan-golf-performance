@@ -45,12 +45,12 @@ export function Testimonials() {
   }, []);
 
   return (
-    <section className="bg-cream py-24">
+    <section className="bg-navy-900 py-24">
       <Container>
         <FadeIn direction="up">
           <SectionHeading
-            eyebrow="Real Golfers, Real Results"
-            heading="What Players Are Saying"
+            eyebrow="Real Athletes, Real Results"
+            heading="What Athletes Are Saying"
             className="mb-12"
           />
         </FadeIn>
@@ -63,7 +63,7 @@ export function Testimonials() {
           type="button"
           onClick={() => scroll("left")}
           className={cn(
-            "absolute left-4 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md transition-all lg:flex",
+            "absolute left-4 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-navy-800 border border-white/10 shadow-lg shadow-black/20 transition-all lg:flex",
             canScrollLeft
               ? "opacity-100 hover:shadow-lg"
               : "pointer-events-none opacity-0",
@@ -71,7 +71,7 @@ export function Testimonials() {
           aria-label="Scroll left"
         >
           <svg
-            className="h-5 w-5 text-charcoal"
+            className="h-5 w-5 text-warm-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -88,7 +88,7 @@ export function Testimonials() {
           type="button"
           onClick={() => scroll("right")}
           className={cn(
-            "absolute right-4 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md transition-all lg:flex",
+            "absolute right-4 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-navy-800 border border-white/10 shadow-lg shadow-black/20 transition-all lg:flex",
             canScrollRight
               ? "opacity-100 hover:shadow-lg"
               : "pointer-events-none opacity-0",
@@ -96,7 +96,7 @@ export function Testimonials() {
           aria-label="Scroll right"
         >
           <svg
-            className="h-5 w-5 text-charcoal"
+            className="h-5 w-5 text-warm-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -130,15 +130,15 @@ export function Testimonials() {
             >
               <Card hover padding="lg" className="flex h-full flex-col">
                 <StarRating rating={testimonial.rating} />
-                <blockquote className="mt-4 flex-1 text-charcoal leading-relaxed">
+                <blockquote className="mt-4 flex-1 text-warm-white leading-relaxed">
                   &ldquo;{testimonial.text}&rdquo;
                 </blockquote>
-                <div className="mt-6 flex items-center justify-between border-t border-gray-100 pt-4">
+                <div className="mt-6 flex items-center justify-between border-t border-white/10 pt-4">
                   <div>
-                    <p className="font-semibold text-charcoal">
+                    <p className="font-semibold text-warm-white">
                       {testimonial.name}
                     </p>
-                    <p className="text-sm text-charcoal-lighter">
+                    <p className="text-sm text-silver">
                       {testimonial.location}
                     </p>
                   </div>

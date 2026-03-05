@@ -8,7 +8,7 @@ export function BrandStory() {
   const [firstParagraph, ...restParagraphs] = BRAND_STORY.paragraphs;
 
   return (
-    <section id="story" className="relative overflow-hidden bg-green-950 py-24 sm:py-32 lg:py-40">
+    <section id="story" className="relative overflow-hidden bg-navy-950 py-24 sm:py-32 lg:py-40">
       {/* Parallax background image */}
       <div className="absolute inset-0 opacity-40">
         <ParallaxWrapper speed={0.3} className="h-full">
@@ -23,7 +23,7 @@ export function BrandStory() {
       </div>
 
       {/* Gradient overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-green-950 via-green-950/95 to-green-950/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/95 to-navy-950/70" />
 
       <Container size="wide" className="relative z-10">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
@@ -58,7 +58,7 @@ export function BrandStory() {
               <div className="mt-10 flex items-center gap-4">
                 <div className="h-px flex-1 bg-gradient-to-r from-gold-500 to-transparent" />
                 <span className="text-sm font-semibold uppercase tracking-widest text-gold-500">
-                  Est. 2024
+                  Est. 2025
                 </span>
                 <div className="h-px flex-1 bg-gradient-to-l from-gold-500 to-transparent" />
               </div>

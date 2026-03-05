@@ -7,7 +7,7 @@ import { SITE_CONFIG } from "@/lib/constants";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-green-950 via-green-900 to-green-800 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 overflow-hidden">
       {/* Subtle radial overlay for depth */}
       <div
         className="pointer-events-none absolute inset-0"
@@ -40,9 +40,9 @@ export function HeroSection() {
 
             <FadeIn direction="up" delay={0.1}>
               <h1 className="font-display text-5xl font-bold leading-[1.1] text-white sm:text-6xl lg:text-7xl">
-                Fuel Your Focus.
+                Perform at the
                 <br />
-                Own the Course.
+                highest level.
               </h1>
             </FadeIn>
 

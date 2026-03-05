@@ -42,7 +42,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       {/* Slide-in panel */}
       <div
         className={cn(
-          "fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-green-950 transition-transform duration-300 ease-in-out",
+          "fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-navy-950 transition-transform duration-300 ease-in-out",
           isOpen ? "translate-x-0" : "translate-x-full"
         )}
         role="dialog"
@@ -101,7 +101,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <Link
               href="/#waitlist"
               onClick={onClose}
-              className="block w-full rounded-lg bg-gold-500 px-6 py-4 text-center text-lg font-semibold text-green-950 transition-colors hover:bg-gold-400"
+              className="block w-full rounded-lg bg-gold-500 px-6 py-4 text-center text-lg font-semibold text-navy-950 transition-colors hover:bg-gold-400"
             >
               Join Waitlist
             </Link>

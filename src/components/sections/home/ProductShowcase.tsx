@@ -6,14 +6,14 @@ import { StaggerChildren } from "@/components/animations/StaggerChildren";
 import { BENEFITS } from "@/lib/constants";
 
 const benefitIcons: Record<string, { emoji: string; bg: string }> = {
-  focus: { emoji: "\uD83C\uDFAF", bg: "bg-green-100 text-green-700" },
-  energy: { emoji: "\u26A1", bg: "bg-gold-500/10 text-gold-600" },
-  hydration: { emoji: "\uD83D\uDCA7", bg: "bg-blue-100 text-blue-600" },
+  focus: { emoji: "\uD83C\uDFAF", bg: "bg-gold-500/10 text-gold-500" },
+  energy: { emoji: "\u26A1", bg: "bg-gold-500/10 text-gold-500" },
+  hydration: { emoji: "\uD83D\uDCA7", bg: "bg-navy-800 text-gold-400" },
 };
 
 export function ProductShowcase() {
   return (
-    <section className="relative bg-cream py-24">
+    <section className="relative bg-navy-900 py-24">
       <Container>
         <div className="relative">
           {/* Centered product image */}
@@ -38,7 +38,7 @@ export function ProductShowcase() {
               {BENEFITS.map((benefit, index) => {
                 const iconData = benefitIcons[benefit.icon] ?? {
                   emoji: "\u2728",
-                  bg: "bg-green-100 text-green-700",
+                  bg: "bg-gold-500/10 text-gold-500",
                 };
 
                 // Desktop positioning: cards float around the central image
@@ -56,10 +56,10 @@ export function ProductShowcase() {
                       >
                         {iconData.emoji}
                       </div>
-                      <h3 className="text-lg font-bold text-charcoal">
+                      <h3 className="text-lg font-bold text-warm-white">
                         {benefit.title}
                       </h3>
-                      <p className="mt-2 text-sm leading-relaxed text-charcoal-lighter">
+                      <p className="mt-2 text-sm leading-relaxed text-silver">
                         {benefit.description}
                       </p>
                     </Card>

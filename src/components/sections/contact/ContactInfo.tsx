@@ -14,9 +14,9 @@ export function ContactInfo() {
       <Card padding="lg" className="space-y-8">
         {/* Email */}
         <div className="flex items-start gap-4">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-100">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold-500/10">
             <svg
-              className="h-5 w-5 text-green-700"
+              className="h-5 w-5 text-gold-500"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
@@ -31,10 +31,10 @@ export function ContactInfo() {
             </svg>
           </div>
           <div>
-            <h3 className="font-semibold text-charcoal">Email Us</h3>
+            <h3 className="font-semibold text-warm-white">Email Us</h3>
             <a
               href={`mailto:${SITE_CONFIG.email}`}
-              className="mt-1 block text-green-700 transition-colors hover:text-green-600"
+              className="mt-1 block text-gold-500 transition-colors hover:text-gold-400"
             >
               {SITE_CONFIG.email}
             </a>
@@ -43,9 +43,9 @@ export function ContactInfo() {
 
         {/* Response Time */}
         <div className="flex items-start gap-4">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-100">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold-500/10">
             <svg
-              className="h-5 w-5 text-green-700"
+              className="h-5 w-5 text-gold-500"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
@@ -60,8 +60,8 @@ export function ContactInfo() {
             </svg>
           </div>
           <div>
-            <h3 className="font-semibold text-charcoal">Response Time</h3>
-            <p className="mt-1 text-charcoal-lighter">
+            <h3 className="font-semibold text-warm-white">Response Time</h3>
+            <p className="mt-1 text-silver">
               We typically respond within 24 hours
             </p>
           </div>
@@ -69,9 +69,9 @@ export function ContactInfo() {
 
         {/* Business Hours */}
         <div className="flex items-start gap-4">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-green-100">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold-500/10">
             <svg
-              className="h-5 w-5 text-green-700"
+              className="h-5 w-5 text-gold-500"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
@@ -86,26 +86,26 @@ export function ContactInfo() {
             </svg>
           </div>
           <div>
-            <h3 className="font-semibold text-charcoal">Business Hours</h3>
-            <p className="mt-1 text-charcoal-lighter">
+            <h3 className="font-semibold text-warm-white">Business Hours</h3>
+            <p className="mt-1 text-silver">
               Monday &ndash; Friday, 9am &ndash; 5pm EST
             </p>
           </div>
         </div>
 
         {/* Divider */}
-        <hr className="border-gray-200" />
+        <hr className="border-white/10" />
 
         {/* Social Links */}
         <div>
-          <h3 className="mb-4 font-semibold text-charcoal">Follow Us</h3>
+          <h3 className="mb-4 font-semibold text-warm-white">Follow Us</h3>
           <div className="flex gap-3">
             {SOCIAL_LINKS.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 aria-label={link.name}
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-sm font-semibold text-green-700 transition-colors hover:bg-green-700 hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-500/10 text-sm font-semibold text-gold-500 transition-colors hover:bg-gold-500 hover:text-navy-950"
               >
                 {link.label}
               </a>

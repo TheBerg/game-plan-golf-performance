@@ -9,7 +9,7 @@ import { CLINICAL_STUDIES } from "@/lib/constants";
 
 export function ClinicalStudies() {
   return (
-    <section className="bg-cream py-24 sm:py-32">
+    <section className="bg-navy-900 py-24 sm:py-32">
       <Container>
         <SectionHeading
           eyebrow="Research-Backed"
@@ -32,17 +32,17 @@ export function ClinicalStudies() {
                     </Badge>
 
                     {/* Study title */}
-                    <h3 className="mt-4 text-lg font-semibold text-charcoal">
+                    <h3 className="mt-4 text-lg font-semibold text-warm-white">
                       {study.title}
                     </h3>
 
                     {/* Finding */}
-                    <p className="mt-3 flex-1 text-base leading-relaxed text-charcoal-lighter">
+                    <p className="mt-3 flex-1 text-base leading-relaxed text-silver">
                       {study.finding}
                     </p>
 
                     {/* Source + year */}
-                    <p className="mt-5 border-t border-green-100 pt-4 text-sm italic text-charcoal-lighter/70">
+                    <p className="mt-5 border-t border-white/10 pt-4 text-sm italic text-silver/70">
                       {study.source} ({study.year})
                     </p>
                   </div>
@@ -54,13 +54,13 @@ export function ClinicalStudies() {
 
         {/* CTA */}
         <FadeIn direction="up" delay={0.3}>
-          <div className="mt-16 rounded-2xl border border-green-100 bg-white p-8 text-center sm:mt-20 sm:p-12">
-            <h3 className="font-display text-2xl font-bold text-charcoal sm:text-3xl">
+          <div className="mt-16 rounded-2xl bg-white/5 border border-white/10 p-8 text-center sm:mt-20 sm:p-12">
+            <h3 className="font-display text-2xl font-bold text-warm-white sm:text-3xl">
               Have Questions About Our Formula?
             </h3>
-            <p className="mx-auto mt-3 max-w-lg text-base text-charcoal-lighter">
+            <p className="mx-auto mt-3 max-w-lg text-base text-silver">
               Our team is happy to walk you through the science, sourcing, and
-              dosing behind every ingredient in Game Plan.
+              dosing behind every ingredient in Elysian Clarity.
             </p>
             <div className="mt-6">
               <Button variant="primary" size="lg" href="/contact">

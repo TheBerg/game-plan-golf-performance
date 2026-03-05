@@ -28,7 +28,7 @@ export function QuantitySelector({
   }, [value, max, onChange]);
 
   return (
-    <div className="inline-flex items-center rounded-lg border border-gray-300">
+    <div className="inline-flex items-center rounded-lg border border-white/20">
       <button
         type="button"
         onClick={decrement}
@@ -38,7 +38,7 @@ export function QuantitySelector({
           "flex h-10 w-10 items-center justify-center rounded-l-lg text-lg font-medium transition-colors",
           atMin
             ? "cursor-not-allowed text-gray-300"
-            : "text-charcoal hover:bg-green-50 hover:text-green-700",
+            : "text-warm-white hover:bg-navy-800 hover:text-gold-500",
         )}
       >
         <svg
@@ -53,7 +53,7 @@ export function QuantitySelector({
       </button>
 
       <span
-        className="flex h-10 w-12 items-center justify-center border-x border-gray-300 text-sm font-semibold text-charcoal tabular-nums"
+        className="flex h-10 w-12 items-center justify-center border-x border-white/20 text-sm font-semibold text-warm-white tabular-nums"
         aria-live="polite"
         aria-label={`Quantity: ${value}`}
       >
@@ -69,7 +69,7 @@ export function QuantitySelector({
           "flex h-10 w-10 items-center justify-center rounded-r-lg text-lg font-medium transition-colors",
           atMax
             ? "cursor-not-allowed text-gray-300"
-            : "text-charcoal hover:bg-green-50 hover:text-green-700",
+            : "text-warm-white hover:bg-navy-800 hover:text-gold-500",
         )}
       >
         <svg

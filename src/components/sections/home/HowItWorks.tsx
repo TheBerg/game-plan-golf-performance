@@ -12,7 +12,7 @@ const stepIcons: Record<string, string> = {
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-green-50 py-24">
+    <section id="how-it-works" className="bg-navy-800 py-24">
       <Container>
         <FadeIn direction="up">
           <SectionHeading
@@ -25,7 +25,7 @@ export function HowItWorks() {
         <div className="relative">
           {/* Connecting line between steps (desktop only) */}
           <div
-            className="pointer-events-none absolute left-0 right-0 top-20 hidden h-0.5 bg-gradient-to-r from-transparent via-green-300 to-transparent lg:block"
+            className="pointer-events-none absolute left-0 right-0 top-20 hidden h-0.5 bg-gradient-to-r from-transparent via-gold-500/30 to-transparent lg:block"
             aria-hidden="true"
           />
 
@@ -37,21 +37,21 @@ export function HowItWorks() {
               <div key={step.step} className="relative text-center">
                 {/* Large step number watermark */}
                 <span
-                  className="pointer-events-none absolute -top-6 left-1/2 -translate-x-1/2 font-display text-8xl font-bold text-green-600/10 select-none"
+                  className="pointer-events-none absolute -top-6 left-1/2 -translate-x-1/2 font-display text-8xl font-bold text-gold-500/10 select-none"
                   aria-hidden="true"
                 >
                   {step.step}
                 </span>
 
                 {/* Icon circle */}
-                <div className="relative mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white text-2xl shadow-md ring-4 ring-green-100">
+                <div className="relative mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-navy-900 text-2xl shadow-lg shadow-black/20 ring-4 ring-gold-500/20">
                   {stepIcons[step.icon] ?? "\u2728"}
                 </div>
 
                 {/* Arrow between steps (desktop, except after last step) */}
                 {step.step < HOW_IT_WORKS_STEPS.length && (
                   <div
-                    className="pointer-events-none absolute right-0 top-8 hidden translate-x-1/2 text-green-400 lg:block"
+                    className="pointer-events-none absolute right-0 top-8 hidden translate-x-1/2 text-gold-500/40 lg:block"
                     aria-hidden="true"
                   >
                     <svg
@@ -70,10 +70,10 @@ export function HowItWorks() {
                   </div>
                 )}
 
-                <h3 className="text-xl font-bold text-charcoal">
+                <h3 className="text-xl font-bold text-warm-white">
                   {step.title}
                 </h3>
-                <p className="mt-3 text-charcoal-lighter leading-relaxed">
+                <p className="mt-3 text-silver leading-relaxed">
                   {step.description}
                 </p>
               </div>

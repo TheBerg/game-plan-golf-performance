@@ -72,12 +72,12 @@ const pillarIcons: Record<string, React.ReactNode> = {
 
 export function ScienceBehind() {
   return (
-    <section className="bg-green-900 py-24 sm:py-32">
+    <section className="bg-navy-900 py-24 sm:py-32">
       <Container size="wide">
         <SectionHeading
           eyebrow="The Science"
           heading="The Synergy Stack"
-          subtitle="Three pillars of performance, working together to unlock your best golf."
+          subtitle="Three pillars of performance, working together to unlock your Elysian state."
           dark
         />
 
@@ -100,7 +100,7 @@ export function ScienceBehind() {
                   <Card
                     padding="lg"
                     className={cn(
-                      "flex flex-1 flex-col bg-green-950/60 text-white backdrop-blur-sm",
+                      "flex flex-1 flex-col bg-navy-950/60 text-white backdrop-blur-sm",
                       "border border-white/10",
                     )}
                   >
@@ -138,7 +138,7 @@ export function ScienceBehind() {
                   {/* Plus sign connector between pillars (visible on md+) */}
                   {!isLast && (
                     <div className="hidden items-center md:flex">
-                      <div className="flex h-10 w-10 -mr-5 ml-1 items-center justify-center rounded-full border border-gold-500/30 bg-green-900 text-xl font-bold text-gold-400 lg:-mr-3 lg:ml-3">
+                      <div className="flex h-10 w-10 -mr-5 ml-1 items-center justify-center rounded-full border border-gold-500/30 bg-navy-900 text-xl font-bold text-gold-400 lg:-mr-3 lg:ml-3">
                         +
                       </div>
                     </div>
@@ -147,7 +147,7 @@ export function ScienceBehind() {
                   {/* Plus sign connector for mobile (between stacked cards) */}
                   {!isLast && (
                     <div className="flex items-center justify-center md:hidden">
-                      <div className="absolute -bottom-3 left-1/2 z-10 flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full border border-gold-500/30 bg-green-900 text-lg font-bold text-gold-400">
+                      <div className="absolute -bottom-3 left-1/2 z-10 flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full border border-gold-500/30 bg-navy-900 text-lg font-bold text-gold-400">
                         +
                       </div>
                     </div>
@@ -165,12 +165,12 @@ export function ScienceBehind() {
               =
             </div>
             <h3 className="font-display text-3xl font-bold text-white sm:text-4xl">
-              Peak Golf Performance
+              Peak Performance
             </h3>
             <p className="mx-auto mt-4 max-w-xl text-lg text-white/60">
               When nootropics, electrolytes, and adaptogens work in concert, you
               get more than the sum of their parts — you get a competitive edge
-              that lasts all 18 holes.
+              that lasts the entire competition.
             </p>
             <div className="mx-auto mt-6 h-px w-24 bg-gradient-to-r from-transparent via-gold-500 to-transparent" />
           </div>

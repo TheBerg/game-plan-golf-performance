@@ -17,7 +17,7 @@ export function IngredientSpotlight() {
   const otherIngredients = INGREDIENTS.filter((i) => !i.highlight);
 
   return (
-    <section className="bg-green-950 py-24">
+    <section className="bg-navy-950 py-24">
       <Container>
         <FadeIn direction="up">
           <SectionHeading
@@ -33,7 +33,7 @@ export function IngredientSpotlight() {
           <FadeIn direction="up" delay={0.1}>
             <Card
               padding="lg"
-              className="mb-12 border-2 border-gold-500/30 bg-gradient-to-br from-green-900 to-green-800"
+              className="mb-12 border-2 border-gold-500/30 bg-gradient-to-br from-navy-900 to-navy-800"
             >
               <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-10">
                 <div className="flex-1">
@@ -95,7 +95,7 @@ export function IngredientSpotlight() {
               key={ingredient.name}
               padding="md"
               hover
-              className="bg-green-900/50 backdrop-blur-sm"
+              className="bg-navy-900/50 backdrop-blur-sm"
             >
               <div className="mb-3 flex items-center justify-between gap-2">
                 <Badge variant={categoryBadgeVariant[ingredient.category] ?? "default"}>
@@ -128,7 +128,7 @@ export function IngredientSpotlight() {
               {ELECTROLYTE_PROFILE.map((electrolyte) => (
                 <div
                   key={electrolyte.mineral}
-                  className="rounded-xl bg-green-900/60 p-4 text-center"
+                  className="rounded-xl bg-navy-900/60 p-4 text-center"
                 >
                   <p className="text-2xl font-bold text-gold-400">
                     {electrolyte.amount}

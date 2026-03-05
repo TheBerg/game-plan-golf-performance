@@ -12,14 +12,14 @@ export function AnnouncementBar() {
   }
 
   return (
-    <div className="relative bg-gold-500 py-2 text-green-950">
+    <div className="relative bg-gold-500 py-2 text-navy-950">
       <div className="mx-auto flex max-w-7xl items-center justify-center px-4 sm:px-6 lg:px-8">
         <p className="pr-8 text-center text-sm font-medium">
-          <span aria-hidden="true">&#127948;&#65039; </span>
+          <span aria-hidden="true">&#10022; </span>
           Coming Soon —{" "}
           <Link
             href="/#waitlist"
-            className="underline underline-offset-2 transition-colors hover:text-green-800"
+            className="underline underline-offset-2 transition-colors hover:text-navy-800"
           >
             Join the waitlist
           </Link>{" "}
@@ -30,7 +30,7 @@ export function AnnouncementBar() {
           onClick={() => setIsDismissed(true)}
           className={cn(
             "absolute right-2 top-1/2 -translate-y-1/2 flex h-7 w-7 items-center justify-center rounded transition-colors",
-            "text-green-950/60 hover:bg-green-950/10 hover:text-green-950 sm:right-4"
+            "text-navy-950/60 hover:bg-navy-950/10 hover:text-navy-950 sm:right-4"
           )}
           aria-label="Dismiss announcement"
         >

@@ -1,54 +1,55 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Montserrat, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 
-const inter = Inter({
-  variable: "--font-inter",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   display: "swap",
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin"],
   display: "swap",
+  weight: ["300", "400", "600"],
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Game Plan Golf Performance | Nootropic Hydration for Golfers",
-    template: "%s | Game Plan Golf Performance",
+    default: "Elysian Sports | Nootropic Hydration for Peak Performance",
+    template: "%s | Elysian Sports",
   },
   description:
-    "Premium golf nootropic hydration. Engineered for mental clarity, sustained energy, and peak performance on every hole. Fuel your focus. Own the course.",
+    "Engineered for athletes who refuse to leave performance to chance. Nootropic hydration designed for the demands of elite competition.",
   keywords: [
-    "golf hydration",
+    "sports hydration",
     "nootropic",
     "golf supplement",
-    "golf performance",
+    "sports performance",
     "electrolytes",
     "focus",
     "mental clarity",
     "CognatiQ",
   ],
-  metadataBase: new URL("https://www.gameplangolfperformance.com"),
+  metadataBase: new URL("https://www.elysiansports.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.gameplangolfperformance.com",
-    siteName: "Game Plan Golf Performance",
-    title: "Game Plan Golf Performance | Nootropic Hydration for Golfers",
+    url: "https://www.elysiansports.com",
+    siteName: "Elysian Sports",
+    title: "Elysian Sports | Nootropic Hydration for Peak Performance",
     description:
-      "Premium golf nootropic hydration. Engineered for mental clarity, sustained energy, and peak performance on every hole.",
+      "Engineered for athletes who refuse to leave performance to chance. Nootropic hydration designed for the demands of elite competition.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Game Plan Golf Performance",
+    title: "Elysian Sports",
     description:
-      "Premium golf nootropic hydration. Fuel your focus. Own the course.",
+      "Nootropic hydration engineered for elite performance. Enter your Elysian state.",
   },
   robots: {
     index: true,
@@ -62,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${cormorant.variable}`}>
       <body className="antialiased">
         <div className="fixed top-0 right-0 left-0 z-30">
           <AnnouncementBar />

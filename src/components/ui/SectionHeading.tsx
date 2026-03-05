@@ -36,7 +36,7 @@ export function SectionHeading({
         className={cn(
           "font-display text-3xl sm:text-4xl lg:text-5xl font-bold",
           eyebrow && "mt-3",
-          dark ? "text-white" : "text-charcoal",
+          dark ? "text-white" : "text-warm-white",
         )}
       >
         {heading}
@@ -46,7 +46,7 @@ export function SectionHeading({
         <p
           className={cn(
             "mt-4 text-lg",
-            dark ? "text-white/70" : "text-charcoal-lighter",
+            dark ? "text-white/70" : "text-silver",
             centered && "mx-auto max-w-2xl",
           )}
         >

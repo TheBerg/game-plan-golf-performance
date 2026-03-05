@@ -7,14 +7,14 @@ import { ContactInfo } from "@/components/sections/contact/ContactInfo";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with the Game Plan Golf Performance team. We're here to answer your questions about our nootropic hydration products, partnerships, and more.",
+    "Get in touch with the Elysian Sports team. We're here to answer your questions about our performance products, partnerships, and more.",
 };
 
 export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-green-50 pt-28 pb-16 sm:pt-32 sm:pb-20">
+      <section className="bg-navy-800 pt-28 pb-16 sm:pt-32 sm:pb-20">
         <Container size="narrow">
           <SectionHeading
             eyebrow="Get In Touch"
